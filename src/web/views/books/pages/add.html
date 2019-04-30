@@ -1,0 +1,26 @@
+{% extends './layout.html' %}
+{% block styles %}
+<link rel="stylesheet" href="/style/index.css">
+{% endblock%}
+{% block title %} 首页 {% endblock %}
+{% block content %}
+<div>
+    <h1>hello swig</h1>
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module">
+    const create=import('/scripts/add.js').then((_)=>{
+                const create = new _.default;
+                create.fn();
+ })      
+</script>
+<!-- 浏览器不支持es6的时候使用下面的 ，如果浏览器不支持nomodule属性，直接使用js把type="nomodule"移除-->
+<script type="nomodule" src="https://cdn.staticfile.org/systemjs/3.1.2/system.js"></script>
+<script type="nomodule">
+    System.import('/scripts/bundle-add.js').then((_) => {
+                const create = new _.default;
+                create.fn();
+})
+</script>
+{% endblock%}

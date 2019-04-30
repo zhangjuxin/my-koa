@@ -1,0 +1,14 @@
+{% extends './layout.html' %}
+{% block styles %}
+<link rel="stylesheet" href="/style/index.css">
+{% endblock%}
+{% block title %} 首页 {% endblock %}
+{% block content %}
+{% for item in data%}
+<ul>
+    <li>{{ item.event }}</li>
+    <li>{{ item.addtime }}</li>
+    <li>{{ item.summary }}</li>
+</ul>
+{%- endfor %}
+{% endblock %}

@@ -1,0 +1,17 @@
+[2019-04-18T14:49:09.023] [ERROR] cheese - Error: Unexpected end of tag "block" on line 10 in file /Users/apple/Desktop/my-koa/views/index.html.
+    at Object.exports.throwError (/Users/apple/Desktop/my-koa/node_modules/swig-templates/lib/utils.js:188:9)
+    at parseTag (/Users/apple/Desktop/my-koa/node_modules/swig-templates/lib/parser.js:659:15)
+    at /Users/apple/Desktop/my-koa/node_modules/swig-templates/lib/parser.js:778:15
+    at Object.exports.each (/Users/apple/Desktop/my-koa/node_modules/swig-templates/lib/utils.js:45:11)
+    at Object.exports.parse (/Users/apple/Desktop/my-koa/node_modules/swig-templates/lib/parser.js:755:9)
+    at exports.Swig.parse (/Users/apple/Desktop/my-koa/node_modules/swig-templates/lib/swig.js:383:19)
+    at exports.Swig.precompile (/Users/apple/Desktop/my-koa/node_modules/swig-templates/lib/swig.js:526:23)
+    at exports.Swig.compile (/Users/apple/Desktop/my-koa/node_modules/swig-templates/lib/swig.js:651:16)
+    at /Users/apple/Desktop/my-koa/node_modules/swig-templates/lib/swig.js:729:27
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+[2019-04-18T18:19:44.371] [ERROR] cheese - { code: 0, message: '接口异常', data: [] }
+[2019-04-18T18:20:19.577] [ERROR] cheese - /ss--找不到该路由
+[2019-04-18T18:20:33.737] [ERROR] cheese - /ss--找不到该路由
+[2019-04-18T18:20:39.948] [ERROR] cheese - { code: 0, message: '接口异常', data: [] }
+[2019-04-18T18:22:02.215] [ERROR] cheese - { code: 0, message: '接口异常', data: [] }
+[2019-04-18T18:22:28.072] [ERROR] cheese - { code: 0, message: '接口异常', data: [] }
